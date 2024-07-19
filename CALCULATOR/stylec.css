@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: hsl(210, 36%, 96%); /* Background color */
+}
+
+#calculator {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: hsl(210, 22%, 25%); /* Background color */
+  border-radius: 15px;
+  max-width: 450px; /* Increased width */
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Added shadow */
+}
+
+#display {
+  width: 100%;
+  padding: 25px; /* Adjusted padding */
+  font-size: 3rem; /* Adjusted font size */
+  text-align: right; /* Text alignment */
+  border: none; /* Removed border */
+  background-color: hsl(210, 22%, 30%); /* Background color */
+  color: white; /* Text color */
+  box-sizing: border-box; /* Ensures padding is included in the element's total width and height */
+  overflow: hidden; /* Ensures the content stays within the display */
+}
+
+
+#keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4px; /* Increased gap for better spacing */
+  padding: 15px; /* Adjusted padding */
+}
+
+button {
+  width: 90px; /* Adjusted button size */
+  height: 50px; /* Adjusted button size */
+  border-radius: 20px; /* Border radius */
+  border: none;
+  background-color: hsl(210, 22%, 40%); /* Background color */
+  color: white; /* Text color */
+  font-size: 2rem; /* Adjusted font size */
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button:hover {
+  background-color: hsl(210, 22%, 50%);
+}
+
+button:active {
+  background-color: hsl(210, 22%, 60%);
+}
+
+.operator-btn {
+  background-color: hsl(45, 100%, 50%); /* Background color */
+}
+
+.operator-btn:active {
+  background-color: hsl(45, 100%, 60%);
+}
+
+.operator-btn:hover {
+  background-color: hsl(45, 100%, 55%);
